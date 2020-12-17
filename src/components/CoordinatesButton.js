@@ -11,6 +11,7 @@ export default class CoordinatesButton extends Component {
             <div>
                 <button onClick={(event) => {
                     array = [event.clientX, event.clientY]
+                    this.props.onReceiveCoordinates(array)
                     
                 }}>
 
